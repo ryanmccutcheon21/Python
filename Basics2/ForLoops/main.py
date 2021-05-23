@@ -89,3 +89,21 @@ for item in my_list:
     counter += item
 
 print(counter)  # 55
+
+
+# range()
+print(range(100))  # range(0, 100)
+# looks like a tuple but it's a range object
+
+for number in range(100):
+    print(number)
+# prints numbers 0 - 99
+
+for _ in range(0, 10, 2):
+    print(_)
+# 0 2 4 6 8
+# the third param is the stepover value
+
+for _ in range(10, 0, -1):
+    print(_)
+# 10 9 8 7 6 5 4 3 2 1
