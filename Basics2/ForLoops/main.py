@@ -107,3 +107,21 @@ for _ in range(0, 10, 2):
 for _ in range(10, 0, -1):
     print(_)
 # 10 9 8 7 6 5 4 3 2 1
+
+
+# enumerate
+for i, char in enumerate('Helllooo'):
+    print(i, char)
+# 0 H
+# 1 e
+# 2 l
+# 3 l
+# 4 l
+# 5 0
+# 6 o
+# 7 o
+
+for i, char in enumerate(list(range(100))):
+    if char == 50:
+        print(f'index of 50 is: {i}')
+# index of 50 is: 50
