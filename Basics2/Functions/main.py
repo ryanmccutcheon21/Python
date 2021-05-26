@@ -35,3 +35,12 @@ show_tree()
 #     *******
 #        *
 #        *
+
+
+# Parameters and Arguments
+def say_hello(name, emoji):
+    print(f'Hello {name} {emoji}')
+
+
+say_hello('Ryan', ':)')
+# Hello Ryan :)
