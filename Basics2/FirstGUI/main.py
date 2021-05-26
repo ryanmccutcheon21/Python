@@ -11,12 +11,14 @@ picture = [
 # iterate over picture
 # if 0 -> print ' '
 # if 1 -> print *
+fill = '*'
+empty = ' '
 for row in picture:
     for pixel in row:
-        if (pixel == 1):
-            print('*', end='')
+        if pixel:
+            print(fill, end='')
         else:
-            print(' ', end='')
+            print(empty, end='')
     print('')
 
 #        *
