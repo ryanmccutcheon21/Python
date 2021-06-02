@@ -48,3 +48,47 @@ def parent():
 
 print(parent())  # 10
 print(a)  # 1
+
+
+# Global keyword
+total = 0
+
+
+def count():
+    global total
+    total += 1
+    return total
+
+
+count()
+count()
+print(count())  # 3
+
+# A better way
+total = 0
+
+
+def count(total):
+    total += 1
+    return total
+
+
+print(count(count(count(total))))  # 3
+
+
+# Nonlocal keyword
+def outer():
+    x = "local"
+
+    def inner():
+        nonlocal x
+        x = "nonlocal"
+        print("inner:", x)
+
+    inner()
+    print("outer:", x)
+
+
+outer()
+# inner: nonlocal
+# outer: nonlocal
